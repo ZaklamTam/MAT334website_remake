@@ -1,0 +1,192 @@
+<html><head>
+<title>MAT334, Complex Variables, Summer 2020</title>
+
+<style>
+
+body {
+  margin: 45;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+p {
+  margin-left: 2.5%;
+  margin-right: 5%; 
+}
+  
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-right: 200px; 
+}
+
+table, td, th {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.sidenav {
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  bottom: 20px;
+  left: 25px;
+  background: #555;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f2f2f2;
+  display: block;
+}
+  
+/* Change the color of links on hover */
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  
+/* Add a color to the active/current link */
+.sidenav a.active {
+  text-align: center;
+  background-color: #8D9900;
+  color: white;
+}
+
+.main {
+  margin-left: 200px; /* Same width as the sidebar + left position in px */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body data-gr-c-s-loaded="true">
+  
+<div class="sidenav">
+  <a class="active" style="margin-left: 0px;padding-left: 8px;margin-top: -7px;"><h2>MAT334</h2>Complex Variables, Summer 2020
+</a>
+  
+  <a style="position:relative;border-top-style: solid;margin-top: 20px;padding-top: 0px;border-top-width: 0px;" href="http://www.math.toronto.edu/ncarruth/MAT334_S20/syllabus.pdf">Syllabus</a>
+  <a style="position:relative;" href="http://www.math.toronto.edu/ncarruth/MAT334_S20/announcements/index.html">Announcements</a>
+  <a style="position:relative;" href="http://www.math.toronto.edu/ncarruth/MAT334_S20/notes/index.html">Nathan's Notes</a>
+  <a style="position:relative;" href="https://utoronto-my.sharepoint.com/:o:/g/personal/matt_sourisseau_mail_utoronto_ca/Eh2ACJUId3dLhwLNRPzV7ioBQh54r1Ji6ONtVsrORQ7aEw?e=BUOFE3">Matt's Notes</a>
+  <a style="position:relative;" href="http://www.math.toronto.edu/ncarruth/MAT334_S20/assignments/index.html">Homeworks</a>
+  <a style="position:relative;" href="http://www.math.toronto.edu/ncarruth/MAT334_S20/problems/index.html">Practice Problems</a>
+  <a style="position:relative;" href="http://www.math.toronto.edu/ncarruth/MAT334_S20/quiz/index.html">Quizzes</a>
+  <a style="position:relative;" href="http://www.math.toronto.edu/ncarruth/goursat">Textbook</a>
+<div></div></div>
+
+<div class="main">
+<p>
+&nbsp;&nbsp;This course will be offered online only. Lectures and tutorials will be held on Bb Collaborate, accessible from Quercus. Office hours will be held on Bb Collaborate and/or Zoom. Information about minimum technology requirements is available <a href="https://www.viceprovoststudents.utoronto.ca/covid-19/tech-requirements-online-learning/">here</a> and <a href="http://www.math.toronto.edu/ncarruth/MAT334_S20/announcements/20200501_000.html">here</a>.
+</p><p><strong>&bull; Instructors:</strong> <br>Nathan Carruth (<a href="mailto:ncarruth@math.toronto.edu">ncarruth@math.toronto.edu</a>, LEC 5101 (coordinator); NOTE: I do not check or reply to e-mail on Sundays);<br>Matthew Sourisseau (<a href="mailto:sourisse@math.utoronto.ca">sourisse@math.utoronto.ca</a>), LEC 0101.
+  </p>
+<p></p><p><strong>&bull; TAs: </strong> <br>
+Stanislav Balchev, Etienne Bilocq, Yucong Jiang, Ren Zhu.
+</p><p><strong>&bull; Office Hours:</strong>
+   <table>
+  <tbody><tr>
+    <th>.</th>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+  </tr>
+  <tr>
+    <th>9AM</th>
+    <td></td>
+    <td>Nathan</td>
+    <td></td>
+    <td>TAs</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>10AM</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Nathan</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>12PM</th>
+    <td></td>
+    <td></td>
+    <td>Matt</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>1PM</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>Matt</td>
+  </tr>
+  <tr>
+    <th>2PM</th>
+    <td>Nathan</td>
+    <td></td>
+    <td>TAs</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>3PM</th>
+    <td>TAs</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>7PM</th>
+    <td></td>
+    <td>TAs</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>8PM</th>
+    <td></td>
+    <td>TAs</td>
+    <td></td>
+    <td>TAs</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>10PM</th>
+    <td></td>
+    <td>Nathan</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody></table> 
+</p>
+<hr>
+<p>
+&nbsp;&nbsp;Here is some additional commentary which is useful for understanding my thinking behind this course, but is too long to put in the syllabus; read at your leisure:
+</p><p>&bull;
+For some context and rationale behind the choice of textbook see <a href="http://www.math.toronto.edu/ncarruth/MAT334_S20/textbook.html">here</a>.
+</p><p>&bull;
+<a href="http://www.math.toronto.edu/ncarruth/MAT334_S20/course_phil.html">What this course is, and what it is not.</a>
+</p><p>
+More to come!
+</p></div>
+
+
+<p></p><div></div>
+
+</body></html>
